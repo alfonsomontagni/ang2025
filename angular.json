@@ -91,6 +91,277 @@
           }
         }
       }
+    },
+    "todolistbase": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/todolistbase",
+      "sourceRoot": "projects/todolistbase/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/todolistbase",
+            "index": "projects/todolistbase/src/index.html",
+            "browser": "projects/todolistbase/src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "projects/todolistbase/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/todolistbase/public"
+              }
+            ],
+            "styles": [
+              "projects/todolistbase/src/styles.css",
+              "node_modules/todomvc-app-css/index.css",
+              "node_modules/todomvc-common/base.css"
+            ],
+            "scripts": ["node_modules/todomvc-common/base.js"]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "todolistbase:build:production"
+            },
+            "development": {
+              "buildTarget": "todolistbase:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/todolistbase/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/todolistbase/public"
+              }
+            ],
+            "styles": [
+              "projects/todolistbase/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "todolistbase-plus": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/todolistbase-plus",
+      "sourceRoot": "projects/todolistbase-plus/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/todolistbase-plus",
+            "index": "projects/todolistbase-plus/src/index.html",
+            "browser": "projects/todolistbase-plus/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/todolistbase-plus/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/todolistbase-plus/public"
+              }
+            ],
+            "styles": [
+              "projects/todolistbase-plus/src/styles.css",
+            "node_modules/todomvc-app-css/index.css",
+              "node_modules/todomvc-common/base.css"
+            ],
+            "scripts": [
+              "node_modules/todomvc-common/base.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "todolistbase-plus:build:production"
+            },
+            "development": {
+              "buildTarget": "todolistbase-plus:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/todolistbase-plus/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/todolistbase-plus/public"
+              }
+            ],
+            "styles": [
+              "projects/todolistbase-plus/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "todo001": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/todo001",
+      "sourceRoot": "projects/todo001/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/todo001",
+            "index": "projects/todo001/src/index.html",
+            "browser": "projects/todo001/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/todo001/tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/todo001/public"
+              }
+            ],
+            "styles": [
+              "projects/todo001/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "todo001:build:production"
+            },
+            "development": {
+              "buildTarget": "todo001:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/todo001/tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/todo001/public"
+              }
+            ],
+            "styles": [
+              "projects/todo001/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   }
 }
