@@ -1,1 +1,35 @@
-<p>login works!</p>
+<!-- Dopo: DaisyUI -->
+<form #loginform="ngForm" (ngSubmit)="onSubmit(loginform)" class="form-control gap-4 p-4 max-w-sm">
+    <!-- Gruppo Email -->
+    <div>
+      <label class="label">
+        <span class="label-text font-semibold">Email</span>
+      </label>
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="email"
+        class="input input-bordered w-full"
+        placeholder="esempio@email.com"
+        required
+      />
+    </div>
+  
+    <!-- Gruppo Password -->
+    <div>
+      <label class="label">
+        <span class="label-text font-semibold">Password</span>
+      </label>
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+        class="input input-bordered w-full"
+        required
+      />
+    </div>
+  
+    <!-- Pulsante submit -->
+    <button type="submit" class="btn btn-primary w-full">Login</button>
+  </form>
+  
