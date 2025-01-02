@@ -1,0 +1,20 @@
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  img {
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  /*
+  img:hover {
+    transform: scale(1.1);
+  }*/
+  img:hover {
+    transform: scale(2); /* Scala raddoppiata */
+    transition: transform 0.3s ease-in-out; /* Aggiungi una transizione per rendere l'effetto fluido */
+  }
+  
