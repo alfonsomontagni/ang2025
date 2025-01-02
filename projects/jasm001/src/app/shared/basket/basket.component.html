@@ -1,0 +1,63 @@
+<h2 class="text-xl font-bold mb-4">Basket</h2>
+
+    <div class="w-[640px]">
+      <div class="grid grid-cols-4 gap-4 auto-cols-fr items-center">
+        <!-- intestazioni tabella -->
+        <div class="font-bold">Name</div>
+        <div class="font-bold">Price</div>
+        <div class="font-bold">Amount</div>
+        <div>&nbsp;</div>
+
+        <!-- elenco prodotti -->
+        @for (product of products(); track product.id) {
+          <div>{{ product.name }}</div>
+          <div>{{ product.price }}</div>
+          <div>{{ product.amount }}</div>
+          <div class="flex gap-2">
+            <button
+              class="btn btn-primary btn-sm"
+              (click)="decrease(product.id)"
+              data-testid="btn-decrease"
+            >
+              <!-- Icona "remove" (Heroicon minus) -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20 12H4" />
+              </svg>
+            </button>
+
+            <button
+              class="btn btn-primary btn-sm"
+              (click)="increase(product.id)"
+              data-testid="btn-increase"
+            >
+              <!-- Icona "add" (Heroicon plus) -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+            </button>
+          </div>
+        }
+
+        <!-- totale -->
+        <div class="font-bold">Total</div>
+        <div class="font-bold" data-testid="total">{{ totalPrice() }}</div>
+      </div>
+    </div>
