@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#lista_immagini{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+#lista_nascosta { display: none;}
+
+img{
+width: 150px;
+height :auto;
+bordr: 5px solid  black;
+}
