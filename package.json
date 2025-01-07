@@ -11,7 +11,8 @@
     "testj02": "jest -- testing001 --coverage",
     "testj:watch": "jest --watch",
     "testj:ci": "jest --runInBand",
-    "serve:ssr:ng-credit-card-ui": "node dist/ng-credit-card-ui/server/server.mjs"
+    "serve:ssr:ng-credit-card-ui": "node dist/ng-credit-card-ui/server/server.mjs",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,
   "dependencies": {
@@ -31,6 +32,7 @@
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
+    "@angular-architects/module-federation": "^19.0.1",
     "@angular-devkit/build-angular": "^18.2.11",
     "@angular-eslint/eslint-plugin": "^19.0.2",
     "@angular-eslint/eslint-plugin-template": "^19.0.2",
@@ -52,6 +54,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ngx-build-plus": "^19.0.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.14",
     "typescript": "~5.5.2"
