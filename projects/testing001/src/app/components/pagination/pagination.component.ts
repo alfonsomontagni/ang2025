@@ -5,13 +5,13 @@ import { UtilsService } from '../../shared/services/utils.service';
 
 
 @Component({
-  selector: 'app-pagination',
-  standalone: true,
-  imports: [
-    //RouterLink, 
-    CommonModule],
-  templateUrl: './pagination.component.html',
-  styleUrl: './pagination.component.css'
+    selector: 'app-pagination',
+    imports: [
+        //RouterLink, 
+        CommonModule
+    ],
+    templateUrl: './pagination.component.html',
+    styleUrl: './pagination.component.css'
 })
 export class PaginationComponent implements OnInit {
   @Input() total: number = 0;

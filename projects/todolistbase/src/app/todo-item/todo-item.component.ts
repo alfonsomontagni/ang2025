@@ -3,10 +3,9 @@ import { FormsModule } from '@angular/forms';
 import { Todo } from '../todos.service';
 
 @Component({
-  selector: 'app-todo-item',
-  standalone: true,
-  imports: [FormsModule],
-  templateUrl: './todo-item.component.html',
+    selector: 'app-todo-item',
+    imports: [FormsModule],
+    templateUrl: './todo-item.component.html'
 })
 export class TodoItemComponent implements AfterViewChecked {
   @Input({required: true}) todo!: Todo;

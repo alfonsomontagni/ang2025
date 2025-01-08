@@ -7,11 +7,10 @@ import {
   CreditCardStyle,
 } from './shared/models/credit-card.interface';
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [FormsModule, CreditCardComponent, OnlyNumbersDirective],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [FormsModule, CreditCardComponent, OnlyNumbersDirective],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   name = signal<string | undefined>('Paolo Rossi');

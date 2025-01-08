@@ -4,9 +4,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
 
 @Component({
-  selector: 'app-todos',
-  templateUrl: './todos.component.html',
-  standalone: true,
-  imports: [HeaderComponent, FooterComponent, MainComponent],
+    selector: 'app-todos',
+    templateUrl: './todos.component.html',
+    imports: [HeaderComponent, FooterComponent, MainComponent]
 })
 export class TodosComponent {}

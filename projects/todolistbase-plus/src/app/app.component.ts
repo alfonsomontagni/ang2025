@@ -6,14 +6,13 @@ import { NavLandComponent } from './core/nav-land/nav-land.component';
 import { LoggerService } from './services/logger';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    NavbarPlusComponent,
-    NavLandComponent
-  ],
-  templateUrl: './app.component.html',
+    selector: 'app-root',
+    imports: [
+        RouterOutlet,
+        NavbarPlusComponent,
+        NavLandComponent
+    ],
+    templateUrl: './app.component.html'
 })
 export class AppComponent {
   constructor() {

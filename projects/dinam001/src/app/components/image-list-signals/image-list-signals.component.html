@@ -1,0 +1,14 @@
+<div>
+    <h1>Lista Dinamica Immagini con Signals</h1>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <!-- Usa signals per mostrare le immagini -->
+      <img
+        *ngFor="let img of images()"
+        [src]="img"
+        alt="Dynamic Image"
+        (click)="removeImage(img)"
+        style="width: 100px; height: 100px; border: 1px solid #ccc; cursor: pointer;"
+      />
+    </div>
+    <button (click)="addImage()">Aggiungi immagine</button>
+  </div>

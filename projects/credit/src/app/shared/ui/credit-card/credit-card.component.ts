@@ -5,15 +5,14 @@ import { CreditCardNumberComponent } from './credit-card-number/credit-card-numb
 import { CreditCardInfoComponent } from './credit-card-info/credit-card-info.component';
 
 @Component({
-  selector: 'ngc-credit-card',
-  standalone: true,
-  imports: [
-    CreditCardHeaderComponent,
-    CreditCardNumberComponent,
-    CreditCardInfoComponent,
-  ],
-  templateUrl: './credit-card.component.html',
-  styleUrl: './credit-card.component.scss',
+    selector: 'ngc-credit-card',
+    imports: [
+        CreditCardHeaderComponent,
+        CreditCardNumberComponent,
+        CreditCardInfoComponent,
+    ],
+    templateUrl: './credit-card.component.html',
+    styleUrl: './credit-card.component.scss'
 })
 export class CreditCardComponent {
   cardInfo = input.required<CreditCard | undefined>();

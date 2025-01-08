@@ -4,13 +4,12 @@ import { SyncService } from '../../services/sync.service';
 import { Product } from '../../models/product.interface';
 
 @Component({
-  selector: 'app-basket',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './basket.component.html',
-  styleUrl: './basket.component.css'
+    selector: 'app-basket',
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './basket.component.html',
+    styleUrl: './basket.component.css'
 })
 export default class BasketComponent {
   products = signal([
