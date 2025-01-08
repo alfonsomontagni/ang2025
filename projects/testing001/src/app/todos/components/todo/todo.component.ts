@@ -15,10 +15,9 @@ import { CommonModule } from '@angular/common';
 import { TodosService } from '../../services/todos.service';
 
 @Component({
-  selector: 'app-todos-todo',
-  templateUrl: './todo.component.html',
-  standalone: true,
-  imports: [CommonModule],
+    selector: 'app-todos-todo',
+    templateUrl: './todo.component.html',
+    imports: [CommonModule]
 })
 export class TodoComponent implements OnInit, OnChanges {
   @Input({ required: true }) todo!: TodoInterface;

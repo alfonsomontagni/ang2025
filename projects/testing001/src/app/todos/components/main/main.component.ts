@@ -5,10 +5,9 @@ import { FilterEnum } from '../../types/filter.enum';
 import { TodoComponent } from '../todo/todo.component';
 
 @Component({
-  selector: 'app-todos-main',
-  templateUrl: './main.component.html',
-  standalone: true,
-  imports: [CommonModule, TodoComponent],
+    selector: 'app-todos-main',
+    templateUrl: './main.component.html',
+    imports: [CommonModule, TodoComponent]
 })
 export class MainComponent implements OnInit {
   todosService = inject(TodosService);

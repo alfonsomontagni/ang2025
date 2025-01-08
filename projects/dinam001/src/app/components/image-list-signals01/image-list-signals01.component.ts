@@ -4,11 +4,10 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-image-list-signals01',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './image-list-signals01.component.html',
-  styleUrl: './image-list-signals01.component.css'
+    selector: 'app-image-list-signals01',
+    imports: [CommonModule],
+    templateUrl: './image-list-signals01.component.html',
+    styleUrl: './image-list-signals01.component.css'
 })
 export class ImageListSignals01Component implements OnChanges {
   @Input() value: string = '';

@@ -2,11 +2,10 @@ import { Component, inject } from '@angular/core';
 import { BasketService } from '../../services/basket.service';
 
 @Component({
-  selector: 'app-basket-a',
-  standalone: true,
-  imports: [],
-  templateUrl: './basket-a.component.html',
-  styleUrl: './basket-a.component.css'
+    selector: 'app-basket-a',
+    imports: [],
+    templateUrl: './basket-a.component.html',
+    styleUrl: './basket-a.component.css'
 })
 export class BasketAComponent {
   basketService = inject(BasketService);

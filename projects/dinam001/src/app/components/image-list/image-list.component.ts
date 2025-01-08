@@ -4,13 +4,12 @@ import { ImageService } from '../../services/image.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-image-list',
-  standalone: true,
-  imports: [    
-    CommonModule,
-  ],
-  templateUrl: './image-list.component.html',
-  styleUrl: './image-list.component.css'
+    selector: 'app-image-list',
+    imports: [
+        CommonModule,
+    ],
+    templateUrl: './image-list.component.html',
+    styleUrl: './image-list.component.css'
 })
 export class ImageListComponent  implements OnChanges {
   images: SafeUrl[] = [];

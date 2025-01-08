@@ -4,10 +4,9 @@ import { TodosService } from '../../services/todos.service';
 import { FilterEnum } from '../../types/filter.enum';
 
 @Component({
-  selector: 'app-todos-footer',
-  templateUrl: './footer.component.html',
-  standalone: true,
-  imports: [CommonModule],
+    selector: 'app-todos-footer',
+    templateUrl: './footer.component.html',
+    imports: [CommonModule]
 })
 export class FooterComponent {
   todosService = inject(TodosService);

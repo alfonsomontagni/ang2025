@@ -3,13 +3,12 @@ import { ImageService } from '../../services/image.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-image-list-signals',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './image-list-signals.component.html',
-  styleUrl: './image-list-signals.component.css'
+    selector: 'app-image-list-signals',
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './image-list-signals.component.html',
+    styleUrl: './image-list-signals.component.css'
 })
 export class ImageListSignalsComponent implements OnChanges {
   // Signal che tiene traccia della lista delle immagini

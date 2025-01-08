@@ -3,11 +3,10 @@ import { Todo, TodosOldService } from '../todos-old.service';
 import { Location } from '@angular/common';
 import { TodoItemComponent } from '../todo-item/todo-item.component';
 @Component({
-  selector: 'app-todo-list-old',
-  standalone: true,
-  imports: [TodoItemComponent],
-  templateUrl: './todo-list-old.component.html',
-  styleUrl: './todo-list-old.component.css'
+    selector: 'app-todo-list-old',
+    imports: [TodoItemComponent],
+    templateUrl: './todo-list-old.component.html',
+    styleUrl: './todo-list-old.component.css'
 })
 export class TodoListOldComponent {
   private location = inject(Location);

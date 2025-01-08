@@ -5,11 +5,10 @@ import { Location } from '@angular/common';
 
 
 @Component({
-  selector: 'app-footer',
-  standalone: true,
-  imports: [RouterLink],
-  templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+    selector: 'app-footer',
+    imports: [RouterLink],
+    templateUrl: './footer.component.html',
+    styleUrl: './footer.component.css'
 })
 export class FooterComponent {
   private location = inject(Location);

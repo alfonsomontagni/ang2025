@@ -4,10 +4,9 @@ import { Todo, TodosService } from '../todos.service';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-todo-footer',
-  standalone: true,
-  imports: [RouterLink],
-  templateUrl: './footer.component.html',
+    selector: 'app-todo-footer',
+    imports: [RouterLink],
+    templateUrl: './footer.component.html'
 })
 export class FooterComponent {
   private location = inject(Location);

@@ -3,11 +3,10 @@ import { Product } from '../models/product';
 import { JsonPipe } from '@angular/common';
 
 @Component({
-  selector: 'app-cart',
-  standalone: true,
-  imports: [JsonPipe],
-  templateUrl: './cart.component.html',
-  styleUrl: './cart.component.css'
+    selector: 'app-cart',
+    imports: [JsonPipe],
+    templateUrl: './cart.component.html',
+    styleUrl: './cart.component.css'
 })
 export class CartComponent {
   products = signal<Product[]>(initialState)
